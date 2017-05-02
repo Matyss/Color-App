@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Circles</title>
+	<script type="text/javascript" src="paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="circles.css">
+	<script type="text/paperscript" canvas="myCanvas">
+	
+	function onKeyDown(event) {
+		new Path.Circle(new Point(view.size.width,view.size.height) * Point.random(), Math.random()*80).fillColor = new Color(Math.random(),Math.random(),Math.random());	
+	}
+
+	
+
+
+
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
